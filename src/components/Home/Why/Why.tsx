@@ -25,18 +25,18 @@ const quick=[
 ]
 const Why = () => {
   return (
-    <div>  <div className={` pt-16 pb-16 `}>
+    <div>  <div className={` lg:pt-16 pb-16 `}>
     <Container>
       <div>
         <h6 className='font-ep text-[18px]'> - Why Travel with Us?</h6>
         <h2 className="text-[30px] lg:text-[35px] font-tav text-start pt-2">
         Best Price. Quality Service.
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 md:gap-5 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
           {quick.map((item) => (
             <div key={item.id} className="group font-mul cursor-pointer ">
               <div
-                className="text-center flex gap-5 items-center p-[15px] py-5
+                className="text-center flex flex-col md:flex-row gap-5 items-center p-[15px] py-5
                  transition-colors bg-[#fefefe] 
            
                text-black border  rounded-md shadow-md group-hover:shadow-2xl"
