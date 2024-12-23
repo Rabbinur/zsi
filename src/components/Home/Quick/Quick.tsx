@@ -41,9 +41,9 @@ const Quick = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-5 mt-8">
             {quick.map((item) => (
-              <div key={item.id} className="group cursor-pointer ">
+              <div key={item.id} className="group cursor-pointer  ">
                 <div
-                  className="text-center flex flex-col md:flex-wrap  gap-5 items-center p-[15px] py-10  transition-colors bg-accent 
+                  className="text-center flex flex-col md:flex-row  gap-5 items-center p-[15px] py-10  transition-colors bg-accent 
                 group-hover:bg-black text-white border  rounded-md shadow-md group-hover:shadow-2xl"
                 >
                   <div className="text-[50px]  flex justify-center items-center">
