@@ -68,7 +68,7 @@ const Clients = () => {
     arrows: true,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
-    appendDots: (dots) => (
+    appendDots: (dots: React.ReactNode) => (
       <div className="">
         <ul className="flex justify-center space-x-2">{dots}</ul>
       </div>

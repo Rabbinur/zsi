@@ -3,7 +3,7 @@ import { useState, FormEvent } from 'react';
 import { useDispatch } from 'react-redux';
 
 import axios from 'axios';
-import { useRouter } from 'next/navigation';
+
 import { AppDispatch } from '../../components/Redux/Store';
 import { loginSuccess } from '../../components/Redux/authSlice';
 
@@ -28,7 +28,7 @@ const LoginForm: React.FC = () => {
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
   const dispatch = useDispatch<AppDispatch>();
-  const router = useRouter();
+  
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -43,9 +43,15 @@ const LoginForm: React.FC = () => {
       dispatch(loginSuccess({ token, user }));
       setEmail("")
       setPassword("")
-      // router.push('/dashboard'); 
-    } catch (err) {
-      setError('Invalid email or password. Please try again.');
+      
+    }  catch (err: unknown) {
+      if (axios.isAxiosError(err) && err.response) {
+        setError(
+          err.response.data?.message || 'Invalid email or password. Please try again.'
+        );
+      } else {
+        setError('An unexpected error occurred. Please try again.');
+      }
     }
   };
 
