@@ -158,7 +158,7 @@ const Fleet = () => {
             Embark on a journey of luxury and sophistication as you discover our
             exquisite fleet of vehicles designed to redefine your travel
             experience. Each vehicle in our fleet is a testament to our
-            commitment to elegance, comfort, and reliability. Here's a glimpse
+            commitment to elegance, comfort, and reliability. Here is a glimpse
             into the diverse offerings that await you.
           </p>
           <div className="  mt-8">

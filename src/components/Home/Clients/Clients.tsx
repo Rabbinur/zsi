@@ -86,7 +86,7 @@ const Clients = () => {
           <p className="text-justify py-5 text-[17px]">
             At RPC Limo, our success is measured by the satisfaction of our
             clients. We take immense pride in building lasting relationships and
-            delivering exceptional service that exceeds expectations. Here's
+            delivering exceptional service that exceeds expectations. Here is
             what some of our satisfied clients have to say about their
             experiences:
           </p>

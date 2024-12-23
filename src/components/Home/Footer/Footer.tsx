@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-import { FaThreads, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa6";
 import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
