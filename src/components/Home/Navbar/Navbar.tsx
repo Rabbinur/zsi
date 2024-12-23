@@ -220,7 +220,7 @@ const Navbar: React.FC = () => {
                           Welcome, User
                         </h6>
                         <p className=" text-gray-500 mt-1">
-                          To access account and manage orders
+                          To access account 
                         </p>
 
                         <Link href={"/login"} onClick={toggleAuth}>

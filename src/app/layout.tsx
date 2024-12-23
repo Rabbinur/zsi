@@ -3,7 +3,7 @@ import { Taviraj, Epilogue, Mulish } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Home/Navbar/Navbar";
 import Footer from "@/components/Home/Footer/Footer";
-
+import ReduxProvider from "@/components/Redux/ReduxProvider";
 
 const tavirajFont = Taviraj({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -38,11 +38,11 @@ export default function RootLayout({
         className={`${tavirajFont.variable} ${epilogueFont.variable}  ${mulishFont.variable}  antialiased`}
       >
         <div className="relative">
-          <Navbar />
-          {children}
-   
-          
-          <Footer />
+          <ReduxProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ReduxProvider>
         </div>
       </body>
     </html>
